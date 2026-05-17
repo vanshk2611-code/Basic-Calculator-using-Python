@@ -13,8 +13,10 @@ elif (x == "-"):
     print("The difference of", a, "and", b, "is", a - b)
 elif (x=="*"):
         print("The product of", a, "and", b, "is", a * b)
-elif (x== "/"):
+elif (x== "/" and b != 0):
     print("The value of", a, "divided by", b, "is", a / b)
+elif (x == "/" and b == 0):
+    print("Error: Cannot divide by zero!")
 elif (x == "^"):
     print("The value of", a, "raised to the power", b, "is", a ** b)
 elif (x == "mod"):
