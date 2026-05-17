@@ -12,17 +12,21 @@ if (x == "+"):
 elif (x == "-"):
     print("The difference of", a, "and", b, "is", a - b)
 elif (x=="*"):
-        print("The product of", a, "and", b, "is", a * b)
+    print("The product of", a, "and", b, "is", a * b)
 elif (x== "/" and b != 0):
     print("The value of", a, "divided by", b, "is", a / b)
 elif (x == "/" and b == 0):
     print("Error: Cannot divide by zero!")
 elif (x == "^"):
     print("The value of", a, "raised to the power", b, "is", a ** b)
-elif (x == "mod"):
+elif (x == "mod" and b != 0):
     print("The remainder when", a, "is divided by", b, "is", a % b)
-elif (x == "//"):
+elif (x == "mod" and b == 0):
+    print("Error: Cannot perform modulus by zero!")
+elif (x == "//" and b != 0):
     print("The floor division of", a, "and", b, "is", a // b)
+elif (x == "//" and b == 0):
+    print("Error: Cannot perform floor division by zero!")
 else:
     print("The operation is not valid. Please enter a valid operation.")
 
@@ -30,6 +34,3 @@ else:
 # In the above code, we take two numbers as input and then ask the user to enter the operation they want to perform.
 # We use an if-elif-else statement to check which operation the user has chosen and perform the corresponding calculation.
 # If the user enters an invalid operation, we print a message indicating that the operation is not valid. 
-
-
-
