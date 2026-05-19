@@ -1,13 +1,13 @@
 # So hey welcome again to a better calculatorusing elif.
 
-print("Hi welcome to Python Calculator-2 \n Made buy :- Vansh Kulshreshtha")
+print("Hi welcome to Python Calculator-2 \n Made buy :- Vansh Kulshreshtha\n")
 
 while True:
     a= int(input("Enter the first number: "))
     b= int(input("Enter the second number: "))
 
     x = input("Enter the operation you want to perform ( +, -, *, /, ^, mod, //(for floor division)): ")
-
+    print("\n")
     if (x == "+"):
         print("The sum of", a, "and", b, "is", a + b)
     elif (x == "-"):
@@ -30,7 +30,7 @@ while True:
         print("Error: Cannot perform floor division by zero!")
     else:
         print("The operation is not valid. Please enter a valid operation.")
-
+    print("\n")
 
 # In the above code, we take two numbers as input and then ask the user to enter the operation they want to perform.
 # We use an if-elif-else statement to check which operation the user has chosen and perform the corresponding calculation.
