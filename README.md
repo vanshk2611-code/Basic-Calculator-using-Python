@@ -15,5 +15,6 @@ Basic calculator made while learning Python.
 - If-Else Statements
 - Operators
 - Typecasting
+- While Loop
 
 Built as part of my Python learning journey.
